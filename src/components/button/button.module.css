@@ -1,0 +1,18 @@
+.button {
+  font-size: 16px;
+  font-weight: 400;
+
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: var(--button-text-color);
+  background: var(--button-accent-1);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--button-accent-1-hover);
+}
+
+.button:active {
+  background: var(--button-accent-1-active);
+}
