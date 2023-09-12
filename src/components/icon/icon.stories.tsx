@@ -3,7 +3,7 @@ import { Icon } from "./icon";
 import { iconsMap } from "./assets";
 
 const meta: Meta<typeof Icon> = {
-  title: "ui/icon",
+  title: "ui/Icon",
   component: Icon,
   argTypes: {
     name: {

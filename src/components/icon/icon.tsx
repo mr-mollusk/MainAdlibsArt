@@ -16,7 +16,11 @@ export const Icon: React.FC<IIcon> = ({
       style={getInlineStyle({ style: {}, variables: { fill, stroke, size } })}
       className={clsx(
         s.icon,
-        { [s.fill]: fill, [s.stroke]: stroke, [s.size]: size },
+        {
+          [s.fill]: fill,
+          [s.stroke]: stroke,
+          [s.size]: size,
+        },
         className
       )}
     >
