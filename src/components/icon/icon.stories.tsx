@@ -23,6 +23,7 @@ const meta: Meta<typeof Icon> = {
   parameters: {
     layout: "centered",
   },
+  tags: ["autodocs"],
 };
 
 export default meta;
