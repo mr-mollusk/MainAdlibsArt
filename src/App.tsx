@@ -1,10 +1,12 @@
 import React from "react";
-import { Button } from "./components";
+import { Button, Icon, IconButton } from "./components";
 
 const App: React.FC = () => {
   return (
     <div>
-      <Button>Я - реакт, тестирую ветки</Button>
+      <Button>
+        <Icon name="icons:delete" />Я - реакт, тестирую ветки
+      </Button>
     </div>
   );
 };

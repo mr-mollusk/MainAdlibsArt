@@ -1,0 +1,22 @@
+.stack {
+  display: flex;
+  flex-direction: var(--direction);
+}
+.row *:not(:last-child) {
+  margin-right: var(--spacing);
+}
+.row *:not(:first-child) {
+  margin-left: var(--spacing);
+}
+.column *:not(:last-child) {
+  margin-bottom: var(--spacing);
+}
+.column *:not(:first-child) {
+  margin-top: var(--spacing);
+}
+
+.dynamic {
+  justify-content: space-between;
+  width: var(--width);
+  flex-wrap: wrap;
+}
