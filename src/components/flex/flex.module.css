@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+  width: var(--width);
+  flex-direction: var(--direction);
+  flex-wrap: var(--wrap);
+  align-items: var(--align);
+  justify-content: var(--justify);
+}
+
+.spacer {
+  flex: 1 1 100%;
+}
