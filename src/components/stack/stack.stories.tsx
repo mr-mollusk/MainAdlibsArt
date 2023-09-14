@@ -20,36 +20,76 @@ const meta: Meta<typeof Stack> = {
 export default meta;
 type Story = StoryObj<typeof Stack>;
 
-export const Primary: Story = {
-  args: {
-    children: (
-      <>
-        <div style={{ width: "50px", height: "50px", background: "red" }}>
-          Я Дивка
-        </div>
-        <div style={{ width: "50px", height: "50px", background: "red" }}>
-          Я Дивка
-        </div>
-        <div style={{ width: "50px", height: "50px", background: "red" }}>
-          Я Дивка
-        </div>
-        <div style={{ width: "50px", height: "50px", background: "red" }}>
-          Я Дивка
-        </div>
-        <div style={{ width: "50px", height: "50px", background: "red" }}>
-          Я Дивка
-        </div>
-      </>
-    ),
-  },
+export const Row: Story = {
+  render: () => (
+    <Stack>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+    </Stack>
+  ),
 };
 
 export const Column: Story = {
-  args: {
-    direction: "column",
-    spacing: 20,
-    children: (
-      <>
+  render: () => (
+    <Stack direction="column">
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+    </Stack>
+  ),
+};
+
+export const Spacing: Story = {
+  render: () => (
+    <Stack spacing={50}>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+      <div style={{ width: "50px", height: "50px", background: "red" }}>
+        Я Дивка
+      </div>
+    </Stack>
+  ),
+};
+
+export const TwoColumns: Story = {
+  render: () => (
+    <Stack>
+      <Stack direction="column">
         <div style={{ width: "50px", height: "50px", background: "red" }}>
           Я Дивка
         </div>
@@ -59,13 +99,18 @@ export const Column: Story = {
         <div style={{ width: "50px", height: "50px", background: "red" }}>
           Я Дивка
         </div>
+      </Stack>
+      <Stack direction="column">
         <div style={{ width: "50px", height: "50px", background: "red" }}>
           Я Дивка
         </div>
         <div style={{ width: "50px", height: "50px", background: "red" }}>
           Я Дивка
         </div>
-      </>
-    ),
-  },
+        <div style={{ width: "50px", height: "50px", background: "red" }}>
+          Я Дивка
+        </div>
+      </Stack>
+    </Stack>
+  ),
 };
