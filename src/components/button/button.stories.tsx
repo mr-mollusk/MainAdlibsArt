@@ -5,10 +5,19 @@ const meta: Meta<typeof Button> = {
   title: "ui/Button",
   component: Button,
   argTypes: {
-    variant: {
+    children: {
+      control: { type: "text" },
+    },
+    colorScheme: {
       description: "Варианты кнопок",
-      options: ["Primary", "Secondary"],
-      control: { type: "select" },
+      options: ["primary", "secondary"],
+      control: { type: "radio" },
+      defaultValue: "Primary",
+    },
+    variant: {
+      options: ["Contained", "Outlined", "Text"],
+      control: { type: "radio" },
+      defaultValue: "Primary",
     },
   },
   parameters: {
@@ -20,5 +29,7 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
-  render: () => <Button>Я кнопка!</Button>,
+  render: ({ children = "Я кнопка", ...rest }) => (
+    <Button {...rest}>{children}</Button>
+  ),
 };

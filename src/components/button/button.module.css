@@ -1,18 +1,50 @@
 .button {
+  --bg-color: var(--button-primary);
+  --hover-color: var(--button-primary-hover);
+  --active-color: var(--button-primary-active);
+  --color-text: var(--button-text-color);
+  --border-color: var(--primary);
   font-size: 16px;
-  font-weight: 400;
-
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: var(--button-text-color);
-  background: var(--button-accent-1);
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 18px;
+  color: var(--color-text);
+  background: var(--bg-color);
   cursor: pointer;
 }
 
 .button:hover {
-  background: var(--button-accent-1-hover);
+  background: var(--hover-color);
 }
 
 .button:active {
-  background: var(--button-accent-1-active);
+  background: var(--active-color);
+}
+
+.secondary {
+  --bg-color: var(--button-secondary);
+  --hover-color: var(--button-secondary-hover);
+  --active-color: var(--button-secondary-active);
+  --border-color: var(--secondary);
+}
+
+.outlined {
+  --bg-color: var(--white);
+  --hover-color: var(--white);
+  --active-color: var(--white);
+  --color-text: var(--primary);
+  border: 1px solid var(--border-color);
+}
+
+.text {
+  --bg-color: var(--white);
+  --hover-color: var(--white);
+  --active-color: var(--white);
+  --color-text: var(--primary);
+}
+.secondary {
+  --color-text: var(--secondary);
+}
+.contained {
+  --color-text: var(--white);
 }
