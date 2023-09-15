@@ -1,12 +1,11 @@
-import React from "react";
-import { Button, Icon, IconButton } from "./components";
+import React, { useEffect } from "react";
+import { Button } from "./components";
+import { colors } from "./config";
 
 const App: React.FC = () => {
   return (
     <div>
-      <Button>
-        <Icon name="icons:delete" />Я - реакт, тестирую ветки
-      </Button>
+      <Button>Я - реакт, тестирую ветки</Button>
     </div>
   );
 };
