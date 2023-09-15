@@ -1,8 +1,8 @@
 .button {
-  --bg-color: var(--button-primary);
-  --hover-color: var(--button-primary-hover);
-  --active-color: var(--button-primary-active);
-  --color-text: var(--button-text-color);
+  --bg-color: var(--primary);
+  --hover-color: var(--primary_600);
+  --active-color: var(--primary_700);
+  --color-text: var(--white);
   --border-color: var(--primary);
   font-size: 16px;
   font-weight: 700;
@@ -22,9 +22,9 @@
 }
 
 .secondary {
-  --bg-color: var(--button-secondary);
-  --hover-color: var(--button-secondary-hover);
-  --active-color: var(--button-secondary-active);
+  --bg-color: var(--secondary);
+  --hover-color: var(--secondary_600);
+  --active-color: var(--secondary_700);
   --border-color: var(--secondary);
 }
 

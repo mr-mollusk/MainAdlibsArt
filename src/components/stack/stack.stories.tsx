@@ -4,6 +4,7 @@ import { Stack } from "./stack";
 const meta: Meta<typeof Stack> = {
   title: "ui/Stack",
   component: Stack,
+
   argTypes: {
     children: {
       table: {

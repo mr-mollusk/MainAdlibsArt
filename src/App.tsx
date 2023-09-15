@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "./components";
+import { colors } from "./config";
 
 const App: React.FC = () => {
   return (

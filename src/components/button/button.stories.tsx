@@ -1,24 +1,19 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./button";
+import { injectColors } from "../../utils/injectColors";
 
 const meta: Meta<typeof Button> = {
   title: "ui/Button",
   component: Button,
+  decorators: [
+    (Story) => {
+      injectColors();
+      return <Story />;
+    },
+  ],
   argTypes: {
-    children: {
-      control: { type: "text" },
-    },
-    colorScheme: {
-      description: "Варианты кнопок",
-      options: ["primary", "secondary"],
-      control: { type: "radio" },
-      defaultValue: "Primary",
-    },
-    variant: {
-      options: ["Contained", "Outlined", "Text"],
-      control: { type: "radio" },
-      defaultValue: "Primary",
-    },
+    variant: { defaultValue: "contained" },
+    colorScheme: { defaultValue: "primary" },
   },
   parameters: {
     layout: "centered",

@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes } from "react";
 
 export type AvaliableButtonColorSchemes = "primary" | "secondary";
-export type AvaliableButtonVariants = "Contained" | "Outlined" | "Text";
+export type AvaliableButtonVariants = "contained" | "outlined" | "text";
 
 export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   colorScheme?: AvaliableButtonColorSchemes;
