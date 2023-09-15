@@ -4,6 +4,7 @@ module.exports = {
       entry: "./src/index.tsx",
     },
     configure: (webpackConfig) => {
+      resolve: { extentions: ['.js', '.jsx', '.ts', '.tsx', 'css'] };
       webpackConfig.module.rules.push({
         test: /\.svg$/,
         use: [

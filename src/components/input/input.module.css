@@ -1,0 +1,16 @@
+.input {
+    width: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    outline:none;
+    caret-color: var(--violent-900);
+    caret-shape: 1px;
+}
+
+.input_wrapper {
+    display: flex;
+    border: 2px solid var(--black-800);
+    width: 328px;
+    padding: 16px;
+    border-radius: 4px;
+}
